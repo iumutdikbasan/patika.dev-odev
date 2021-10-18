@@ -251,3 +251,14 @@ DELETE FROM employee
 WHERE id < 6 ;
 
 ```
+# Ödev 9
+
+1.city tablosu ile country tablosunda bulunan şehir (city) ve ülke (country) isimlerini birlikte görebileceğimiz INNER JOIN sorgusunu yazınız.
+
+```
+SELECT dvdrental.city,dvdrental.country FROM dvdrental
+INNER JOIN city ON country.name = city.name;
+
+```
+
+2.customer tablosu ile payment tablosunda bulunan payment_id ile customer tablosundaki first_name ve last_name isimlerini birlikte görebileceğimiz INNER JOIN sorgusunu yazınız.
